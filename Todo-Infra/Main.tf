@@ -3,7 +3,7 @@ module "rg" {
   Rg-name  = "rg-todoapp"
   location = "centralindia"
 }
-module "rg" {
+module "rg2" {
   source   = "../Modules/Resource_Group"
   Rg-name  = "rg-git"
   location = "centralindia"

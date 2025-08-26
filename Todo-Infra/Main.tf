@@ -8,6 +8,11 @@ module "rg2" {
   Rg-name  = "rg-git"
   location = "centralindia"
 }
+module "rg3" {
+  source   = "../Modules/Resource_Group"
+  Rg-name  = "pushpa-rg"
+  location = "centralindia"
+}
 
 module "vnet1" {
   depends_on    = [module.rg]

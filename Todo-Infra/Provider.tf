@@ -1,7 +1,7 @@
 terraform {
   backend "azurerm" {
     resource_group_name = "rg-todostatefile"
-    storage_account_name = "todostatestg"
+    storage_account_name = "todostatestg1"
     container_name = "todostatefile"
     key = "todoinfra.tfstate"
   }
@@ -14,6 +14,6 @@ terraform {
 }
 provider "azurerm" {
   features {}
-  subscription_id = "cd883195-4092-4235-89ce-a005b171ae9e"
- tenant_id = "a2c5272e-b6b0-4432-acee-5f70571b30e2"
+  subscription_id = "a87c6699-9b7e-4873-a0c4-8660499ba9ea"
+ tenant_id = "d679bae9-8010-4a4c-a048-83977ede965d"
 }

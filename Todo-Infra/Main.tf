@@ -3,21 +3,7 @@ module "rg" {
   Rg-name  = "rg-todoapp"
   location = "centralindia"
 }
-module "rg2" {
-  source   = "../Modules/Resource_Group"
-  Rg-name  = "rg-git"
-  location = "centralindia"
-}
-module "rg3" {
-  source   = "../Modules/Resource_Group"
-  Rg-name  = "pushpa-rg"
-  location = "centralindia"
-}
-module "rg4" {
-  source   = "../Modules/Resource_Group"
-  Rg-name  = "pushpa2-rg"
-  location = "centralindia"
-}
+
 
 module "vnet1" {
   depends_on    = [module.rg]
